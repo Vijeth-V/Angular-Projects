@@ -1,0 +1,36 @@
+.nav{
+    font-family: Arial;
+    background-color: #eb0000;
+    display: flex;
+    justify-content:space-around;
+    color: white;
+    height: 50px;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+.title{
+    font-weight: 700;
+}
+
+.nav-option{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 0.9em;
+}
+
+.option{
+    padding: 15px;
+}
+
+.option:hover{
+    background-color: #f85050;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+

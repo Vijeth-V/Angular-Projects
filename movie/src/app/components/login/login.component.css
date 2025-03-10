@@ -1,0 +1,110 @@
+.login {
+  background-image: url("../../../assests/netflix.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.logo {
+  width: 9.25rem;
+  height: 2.5rem;
+  color: red;
+  fill: currentColor;
+  display: block;
+  padding: 20px;
+  margin-left: 50px;
+  z-index: 2;
+  position: relative;
+}
+
+.sign-in {
+  position: relative;
+  z-index: 2;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 70%;
+  width: 20%;
+  left: 38%;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.user-input {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    height: 50px;
+    color: white;
+    background-color: rgba(16, 14, 14, 0.1);
+    border: 1px solid rgb(106, 106, 106);
+    padding: 10px;
+}
+
+button {
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-weight: 700;
+  padding: 0;
+  font-size: 0.875rem;
+  height: 40px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.remember {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.remember-me {
+    margin-left: 5px;
+}
+
+.blue {
+    color: rgb(38, 87, 195);
+}
+
+.white {
+    color: white;
+    cursor: pointer;
+}
+
+p{
+    font-size: 13px;
+}
+
+.info {
+    margin-top: 20px;
+    line-height: 25px;
+    color: gray;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+.home{
+  cursor: pointer;
+}

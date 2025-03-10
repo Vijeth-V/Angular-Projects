@@ -1,0 +1,19 @@
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #121212;
+}
+
+.movielist {
+  background-color: #121212;
+}
+
+.loading-spinner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}

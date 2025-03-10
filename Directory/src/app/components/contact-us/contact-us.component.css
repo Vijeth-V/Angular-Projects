@@ -1,0 +1,58 @@
+.contactus-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 280px;
+    margin-bottom: 10px;
+    margin-top: 70px;
+}
+
+.user-input {
+    width: 25%;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: black;
+    border: 1px solid rgb(106, 106, 106);
+    padding: 10px;
+}
+
+.error {
+  color: red;
+}
+
+button {
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  height: 35px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.contactInfo {
+    width: 40%;
+}
+
+.green {
+    color: green;
+    margin-bottom: 40px;
+}
+
+.info{
+    border-top: 1px solid black;
+    padding-top: 20px;
+}
+
+.message {
+    margin-top: 20px;
+}
+
+.submitted-message {
+    margin-bottom: 10px;
+}
+
+

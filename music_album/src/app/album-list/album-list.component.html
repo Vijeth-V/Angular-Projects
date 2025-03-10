@@ -1,0 +1,8 @@
+<div class="album-list-container">
+  <div class="album-card" *ngFor="let album of albums">
+    <img [src]="album.artworkUrl100" alt="{{ album.collectionName }}">
+    <div class="album-info">
+      <h3>{{ album.collectionName }}</h3>
+    </div>
+  </div>
+</div>

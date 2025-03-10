@@ -1,0 +1,19 @@
+<form #form="ngForm">
+
+    <input type="checkbox" [(ngModel)]="selectAllChecked" name="selectAll" id="selectAll"
+        (change)="onSelectAllChange()" />
+    Select All
+
+    <div *ngFor="let movie of itemList">
+        <ul>
+            <li>
+                <input type="checkbox" [(ngModel)]="checkboxState[movie]" name="movie" (change)="onCheckChange()"
+                    id="movie" />
+                {{ movie }}
+            </li>
+        </ul>
+    </div>
+
+    <button type="button" (click)="onClearAll()">Clear All</button>
+
+</form>

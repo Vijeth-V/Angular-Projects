@@ -1,0 +1,12 @@
+<div class="book-item">
+    <div class="book-picture">
+        <img *ngIf="book.bookPic" [src]="book.bookPic" alt="Book cover" />
+    </div>
+    <div class="book-details" (click)="addToWishlist()">
+        <h3>{{ book.bookName }}</h3>
+        <p><strong>Author:</strong> {{ book.author }}</p>
+        <p><strong>Publisher:</strong> {{ book.publisher }}</p>
+        <p><strong>Publish Date:</strong> {{ book.publishDate }}</p>
+        <p><strong>Description:</strong> {{ book.description }}</p>
+    </div>
+</div>

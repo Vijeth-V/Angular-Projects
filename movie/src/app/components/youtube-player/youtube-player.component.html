@@ -1,0 +1,25 @@
+<button
+  class="nav-button left"
+  (click)="goToPreviousTrailer()"
+  [disabled]="currentTrailerIndex === 0"
+>
+  &lt;
+</button>
+<div class="trailer-dialog">
+  <div class="video-container">
+    <youtube-player
+      [videoId]="currentTrailerKey"
+      suggestedQuality="hd720"
+      [width]="560"
+    ></youtube-player>
+  </div>
+
+</div>
+
+<button
+  class="nav-button right"
+  (click)="goToNextTrailer()"
+  [disabled]="currentTrailerIndex === trailers.length - 1"
+>
+  &gt;
+</button>

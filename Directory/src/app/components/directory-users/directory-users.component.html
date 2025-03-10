@@ -1,0 +1,14 @@
+<div class="directory">
+    <div class="title">
+        <h2>CVS Users</h2>
+    </div>
+    <div *ngIf="users.length > 0">
+        <div *ngFor="let user of users" class="directory_list">
+            <img [src]="user.avatar">
+            <div>
+                <h4>{{ user.first_name }} {{ user.last_name }}</h4>
+                <span class="email">{{ user.email }}</span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,76 @@
+.main-section {
+  padding-bottom: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  font-family: sans-serif;
+  border-bottom: 5px solid grey;
+}
+
+.main-section-1 {
+  padding: 50px;
+}
+
+.netflix {
+  margin-left: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 10px;
+  position: absolute;
+  padding: 7px;
+  height: 115px;
+  width: 400px;
+  top: 43%;
+  left: 31%;
+  transform: translate(-50%, 250%);
+  background-color: black;
+}
+
+.backgroundimg {
+  position: relative;
+}
+
+.movie-image {
+  height: 100%;
+  margin-left: 11px;
+}
+.download-gif {
+  height: 70%;
+  margin-right: 11px;
+}
+.text {
+  width: 45%;
+}
+.text-name {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.text-download {
+  color: rgb(1, 113, 235);
+}
+
+.side {
+  color: white;
+  margin-right: 25%;
+}
+
+.backgroundimgtv {
+  position: relative;
+}
+
+.side-text {
+  color: white;
+  text-align: left;
+  margin-left: 150px;
+  width: 30%;
+  margin-right: 40px;
+}

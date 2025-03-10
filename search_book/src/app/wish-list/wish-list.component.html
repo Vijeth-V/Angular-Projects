@@ -1,0 +1,9 @@
+<div class="wishlist">
+    <h4>My Reading Wishlist</h4>
+    <ul>
+        <li *ngFor="let book of wishlist">
+            <span>{{ book }}</span>
+            <button (click)="removeFromWishlist(book)">Remove</button>
+        </li>
+    </ul>
+</div>

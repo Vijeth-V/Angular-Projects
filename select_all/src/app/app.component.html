@@ -1,0 +1,9 @@
+<app-select [itemList]="itemList" (selectedMoviesChange)="updateSelectedMovies($event)">
+</app-select>
+
+<div>
+  <h3>Selected Movies:</h3>
+  <ul>
+    <li *ngFor="let movie of selectedMovies">{{ movie }}</li>
+  </ul>
+</div>

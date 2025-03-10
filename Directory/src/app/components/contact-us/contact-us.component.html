@@ -1,0 +1,49 @@
+<div class="contactus-form">
+    <div>
+        <h2>Contact Us</h2>
+    </div>
+    <div>
+        <form [formGroup]="contactus" (ngSubmit)="onSubmit()" *ngIf="!submitted; else successTemplate">
+            <label for="name">Name:</label>
+            <div>
+                <input type="text" id="name" formControlName="name" class="user-input" />
+            </div>
+
+            <div *ngIf="contactus.get('name')?.invalid && contactus.get('name')?.touched" class="error">
+                <small *ngIf="contactus.get('name')?.errors?.['required']">Name is required.</small>
+            </div>
+
+            <label for="message">Message:</label>
+            <div>
+                <textarea rows="4" id="message" formControlName="message" class="user-input"></textarea>
+            </div>
+
+            <div *ngIf="
+          contactus.get('message')?.invalid && contactus.get('message')?.touched
+        " class="error">
+                <small *ngIf="contactus.get('message')?.errors?.['required']">Message is required.</small>
+                <small *ngIf="contactus.get('message')?.errors?.['minlength']">Message must be at least 10
+                    characters.</small>
+            </div>
+            <button>Send Message</button>
+        </form>
+    </div>
+</div>
+
+<ng-template #successTemplate>
+    <div class="contactInfo">
+        <h4 class="green">
+            Thank you for contacting us. We will be in touch shortly!
+        </h4>
+        <p class="info">
+            <strong>You have submitted the following message:</strong>
+        </p>
+        <span><strong>Name:</strong></span>
+        <div>{{ submittedData?.name }}</div>
+        <div class="message">
+            <span><strong>Message:</strong></span></div>
+            <div class="submitted-message">{{ submittedData?.message }}</div>
+        
+        <button (click)="submitted = false">Back to Form</button>
+    </div>
+</ng-template>

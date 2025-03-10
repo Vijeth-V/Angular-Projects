@@ -1,0 +1,21 @@
+<span>
+    <h1>
+        Unlimited Movies, TV Shows and More
+    </h1>
+    <h4>
+        Starts at $6.99, Cancel at anytime
+    </h4>
+    <h5>
+        Ready to watch? Enter your email to create or restart your membership.
+    </h5>
+</span>
+
+<form [formGroup]="emailForm">
+    <input type="text" placeholder="Email Address" class="input" formControlName="email">
+
+    <button [disabled]="emailForm.invalid" (click)="navigateToSignUp()">Get Started</button>
+    <div *ngIf="emailForm.get('email')?.hasError('hasEmail') && emailForm.get('email')?.touched">
+        <small class="error">This email is already registered.</small>
+    </div>
+
+</form>

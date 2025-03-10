@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+<div class="page-1">
+  <div class="sign-up">
+    <span>STEP 1 OF 3</span>
+    <h1>Create a Password to Start Your Membership</h1>
+    <div>
+      <span>Just a few steps and you are done!</span>
+      <p>We hate paperworks, too.</p>
+    </div>
+
+    <form [formGroup]="signUpForm">
+      <label for="email"></label>
+      <input type="email" id="email" placeholder="Email" formControlName="email" class="user-input" autocomplete="email">
+    
+      <label for="password"></label>
+      <input type="password" id="password" placeholder="Enter your password" formControlName="password" class="user-input" autocomplete="new-password">
+    
+      <div *ngIf="signUpForm.get('password')?.invalid && signUpForm.get('password')?.touched" class="error">
+        <small *ngIf="signUpForm.get('password')?.errors?.['required']">Password is required.</small>
+        <small *ngIf="signUpForm.get('password')?.errors?.['minlength']">Password must be at least 8 characters.</small>
+      </div>
+      
+      <p class="blue">Forgot your password?</p>
+    
+      <button type="button" (click)="navigateToSignUp2()">Next</button>
+    </form>
+  </div>
+</div>
+
+<app-footer></app-footer>

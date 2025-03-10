@@ -1,0 +1,33 @@
+.directory {
+    margin-top: 70px;
+    margin-left: 280px;
+}
+
+.title {
+    margin: 10px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.directory_list {
+    display: flex;
+    background-color: rgb(236, 235, 235);
+    padding: 20px;
+    margin: 10px;
+    width: 70%;
+}
+
+img{
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    margin-right: 10px;
+}
+
+.email {
+    color: blue;
+    margin-top: 0px;
+}

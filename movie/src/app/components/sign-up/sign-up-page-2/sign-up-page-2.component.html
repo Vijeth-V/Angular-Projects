@@ -1,0 +1,45 @@
+<app-header></app-header>
+
+<div class="page-2">
+  <div class="sign-up-2">
+    <div class="text">
+      <img src="../../assests/Checkmark.png" />
+      <p>STEP 2 OF 3</p>
+      <h2>Create a Username && Add your Tmdb Api_key</h2>
+      <h3>Just a few more steps and you're done!</h3>
+      <h3>We hate paperwork,too.</h3>
+    </div>
+
+    <div class="list">
+      <form [formGroup]="signup2form" (ngSubmit)="navigateToSignUp3()">
+        <div>
+          <label for="username"></label>
+          <input type="text" name="username" id="username" placeholder="Username" formControlName="username"
+            class="user-input" required />
+        </div>
+
+        <div *ngIf="signup2form.get('username')?.invalid && signup2form.get('username')?.touched" class="error">
+          <small *ngIf="signup2form.get('username')?.errors?.['required']">Username is required.</small>
+          <small *ngIf="signup2form.get('username')?.errors?.['minlength']">Username must be at least 8 characters.</small>
+        </div>
+
+        <div>
+          <label for="tmdb"></label>
+          <input type="text" name="tmdb" id="tmdb" placeholder="Tmdb Api Key" formControlName="tmdb" class="user-input"
+            required />
+        </div>
+
+        <div *ngIf="signup2form.get('tmdb')?.invalid && signup2form.get('tmdb')?.touched" class="error">
+          <small *ngIf="signup2form.get('tmdb')?.errors?.['required']">TMDB key is required.</small>
+          <small *ngIf="signup2form.get('tmdb')?.errors?.['minlength']">TMDB key must be at least 8 characters.</small>
+        </div>
+      </form>
+    </div>
+
+    <button [disabled]="signup2form.invalid" (click)="navigateToSignUp3()">
+      Next
+    </button>
+  </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,11 @@
+.album-search-bar-container {
+  display: block;
+}
+
+p {
+  text-align: center;
+  border-bottom: 1px solid teal;
+  width: 40%;
+  margin: auto;
+  padding: 15px;
+}

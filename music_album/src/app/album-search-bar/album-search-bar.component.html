@@ -1,0 +1,7 @@
+<div class="album-search-bar-container">
+  <app-search-bar (artistSearch)="onArtistSearch($event)"></app-search-bar>
+  <div *ngIf="searchTerm">
+    <p>{{ albums.length }} results for "{{ searchTerm }}"</p>
+  </div>
+  <app-album-list [albums]="albums"></app-album-list>
+</div>

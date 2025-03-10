@@ -1,0 +1,5 @@
+<div class="search-container">
+    <input type="text" id="search" [(ngModel)]="bookName" placeholder="Search for a book..." />
+    <button (click)="onSearch()">Search</button>
+</div>
+<p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
