@@ -1,0 +1,22 @@
+<div class="game">
+  <h1>Tic Tac Toe</h1>
+
+  <div class="status">
+    <h2>Current player: {{ currentPlayer }}</h2>
+  </div>
+
+  <div class="board">
+    <div *ngFor="let row of board; let i = index" class="row">
+      <div
+        *ngFor="let cell of row; let j = index"
+        class="cell"
+        (click)="selected(i, j)"
+      >
+        {{ cell }}
+      </div>
+    </div>
+    <button (click)="resetGame()">Reset</button>
+  </div>
+
+  <h4 *ngIf="gameOver">The Winner is : {{ winner }}</h4>
+</div>
