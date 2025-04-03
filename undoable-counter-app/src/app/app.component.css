@@ -1,0 +1,21 @@
+.container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .buttons button, .history-buttons button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .history-buttons button:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
